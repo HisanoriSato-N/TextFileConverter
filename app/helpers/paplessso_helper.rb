@@ -1,0 +1,2 @@
+module PaplesssoHelper
+end

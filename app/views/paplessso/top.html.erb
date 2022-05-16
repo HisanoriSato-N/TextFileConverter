@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional/EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>SSO</title>
+    </head>
+    <body>
+        <form ID = "Login" action="http://ps060v/PaplesClient/" method="post" target="_blank">
+            <input type="hidden" ID="USER" name="YUID" />
+            <input type="hidden" type="submit" value="PaplesClient" />
+        </form>
+        <script type="text/javascript">
+            var url = location.href;
+            var urlArray = url.split('?');
+            var target = document.getElementById('USER');
+            target.value = urlArray[1];
+            document.getElementById('Login').submit();
+        </script>
+    </body>
+</html>

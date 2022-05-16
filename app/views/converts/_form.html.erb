@@ -1,0 +1,12 @@
+<%= form_with(model: convert, local: true) do |form| %>  
+  <div class="custom-file">
+    <%= form.file_field :file , class: "custom-file-input ", id: "inputFile" %>
+    <label class="custom-file-label text-center" for="inputFile" data-browse="選択">ここにファイルをドロップするか、クリックして選択</label>     
+  </div>
+  <p></p>
+  <div class="actions">
+    <div class="row justify-content-center"> 
+      <%= form.submit value = "アップロード" , class: 'btn btn-primary'%>
+    </div>
+  </div>
+<% end %>
